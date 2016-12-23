@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<import-steps>
+
+ <import-step
+    id="flemalle.urban.dataimport-flemalleUrbawebImport"
+    handler="flemalle.urban.dataimport.importer.importFlemalleUrbaweb"
+    title="Urbaweb import for Flemalle">
+  Urbaweb import for Flemalle
+ </import-step>
+
+</import-steps>
