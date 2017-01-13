@@ -13,6 +13,7 @@
 
     <!-- Include configuration for dependencies listed in setup.py -->
     <includeDependencies package="." />
+    <include package=".access" />
 
     <!-- Register the installation GenericSetup extension profile -->
     <genericsetup:registerProfile
@@ -33,14 +34,14 @@
     <browser:page
         name="dataimport-controlpanel"
         for="Products.CMFPlone.interfaces.IPloneSiteRoot"
-        class=".settings.FlemalleImporterSettings"
+        class=".settings.FlemalleImporterControlPanel"
         permission="zope2.View"
     />
 
     <adapter
         for="flemalle.urban.dataimport.settings.FlemalleImporterSettingsForm"
         factory=".settings.FlemalleImporterFromImportSettings"
-        provides="imio.urban.dataimport.agorawin.interfaces.IAgorawinDataImporter"
+        provides="imio.urban.dataimport.access.interfaces.IAccessImporter"
     />
 
 </configure>
